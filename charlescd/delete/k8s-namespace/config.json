@@ -1,0 +1,14 @@
+{
+  "dockerImageBuilder": "cimg/base:stable-20.04",
+  "inputs": [
+    {
+      "name": "kubeconfig",
+      "type": "CREDENTIAL_KUBECONFIG_BASE64CONFIG"
+    },
+    {
+      "label": "Delete k8s namespace: ",
+      "name": "namespace",
+      "type": "text"
+    }
+  ]
+}

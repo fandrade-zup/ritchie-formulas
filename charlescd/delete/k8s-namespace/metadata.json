@@ -1,0 +1,16 @@
+{
+  "execution": [
+    "local",
+    "docker"
+  ],
+  "os": {
+    "deps": [],
+    "support": [
+      "mac",
+      "linux"
+    ]
+  },
+  "tags": [
+    "charlescd", "delete", "k8s-namespace"
+  ]
+}

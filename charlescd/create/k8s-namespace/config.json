@@ -1,0 +1,24 @@
+{
+  "dockerImageBuilder": "cimg/base:stable-20.04",
+  "inputs": [
+    {
+      "name": "kubeconfig",
+      "type": "CREDENTIAL_KUBECONFIG_BASE64CONFIG"
+    },
+    {
+      "label": "Create k8s namespace: ",
+      "name": "namespace",
+      "type": "text"
+    },
+    {
+      "default": "false",
+      "items": [
+        "no",
+        "yes"
+      ],
+      "label": "Enable Istio? ",
+      "name": "enable_istio",
+      "type": "text"
+    }
+  ]
+}
