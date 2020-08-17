@@ -1,0 +1,42 @@
+{
+  "dockerImageBuilder": "cimg/base:stable-20.04",
+  "inputs": [
+    {
+      "name": "kubeconfig",
+      "type": "CREDENTIAL_KUBECONFIG_BASE64CONFIG"
+    },
+    {
+      "items": [
+        "1.4.10",
+        "1.6.8"
+      ],
+      "label": "Select your Istio Version: ",
+      "name": "istio_version",
+      "type": "text"
+    },
+    {
+    "default": "no",
+    "items": [
+      "no",
+      "yes"
+    ],
+    "label": "Do you wish to install istioctl? ",
+    "name": "istioctl",
+    "type": "text"
+    },
+    {
+      "default": "default",
+      "items": [
+        "default",
+        "minimal",
+        "preview",
+        "remote",
+        "demo",
+        "empty"
+      ],
+      "label": "Which istio profile you want to install? ",
+      "name": "profile",
+      "type": "text"
+    }
+  ]
+}
