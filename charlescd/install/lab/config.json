@@ -1,0 +1,15 @@
+{
+  "dockerImageBuilder": "cimg/base:stable-20.04",
+  "inputs": [
+    {
+      "name": "kubeconfig",
+      "type": "CREDENTIAL_KUBECONFIG_BASE64CONFIG"
+    },
+    {
+      "default": "charles.info.example",
+      "label": "Desired hostname for charles",
+      "name": "hostname",
+      "type": "text"
+    }
+  ]
+}
