@@ -4,7 +4,7 @@ runIstioctl() {
         echo "Istioctl installation..."
 
         curl -L https://istio.io/downloadIstio | sh -
-        mkdir -p ~/.rit-programs
+        mkdir -p ~/.rit-programs/bin
         rm -rf "$HOME/.rit-programs/istio-$ISTIO_VERSION/"
         mv "istio-$ISTIO_VERSION/" ~/.rit-programs
         rm $HOME/.rit-programs/bin/istioctl
